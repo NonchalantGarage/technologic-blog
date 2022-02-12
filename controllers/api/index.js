@@ -10,5 +10,7 @@ router.use('/posts',postRoutes);
 router.use('/comments', commentRoutes );
 // points to users api route
 router.use('/users', userRoutes);
+// points to users api route
+
 
 module.exports = router
