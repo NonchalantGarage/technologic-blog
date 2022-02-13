@@ -1,9 +1,9 @@
 <div class = "comments">
     {{#each this}}
-    <section class = "comment">
-        <div class ="meta">
+    <section class = "comment text-center">
+        <h5 class ="meta">
             Comment by {{user.username}} on {{format_date created_at}}
-        </div>
+        </h5>
         <div class = "text">
             {{comment_text}}
         </div>

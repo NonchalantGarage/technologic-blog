@@ -1,0 +1,33 @@
+<div class="card text-CENTER justify-content-center">
+  <h1 class="card-header">Existing Post</h1>
+<div class="card text-center">
+
+    <div class="card-header">
+      <h3>{{post.title}}</h3>
+      <br>
+      {{post.post_content}}
+      <div>
+
+<div class="card text-CENTER justify-content-center">
+  <h1 class="card-header">Edit Post</h1>
+  <div class="card-body">
+    <form class="post-form">
+      <div>
+        <label for="post-title">Title:</label>
+        <input class="form-control" type="text" id="post-title" name="post-title" />
+      </div>
+      <div>
+        <label for="post-content">Content:</label>
+        <input class="form-control" type="text" id="post-content" name ="post-content" />
+      </div>
+      <div class="text-center">
+        <button class="btn btn-primary " type="submit" id="new-post">Edit Post</button>
+      </div>
+    </form>
+
+  <h1 class="card-header">Delete Post</h1>
+    <button class="btn btn-primary " type="submit" id="delete-post">Delete Post</button>
+
+
+      <script src="/javascript/edit-post.js"></script>
+      <script src="/javascript/delete-post.js"></script>
