@@ -16,6 +16,5 @@
 ![Alt text](/assets/screenshots/homepage.png "Homepage")
 
 ## Author
-Curtis Hong
-```bash 
-https://github.com/NonchalantGarage
+
+[Curtis Hong](https://github.com/nonchalantgarage)
