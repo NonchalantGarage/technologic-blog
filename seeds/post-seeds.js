@@ -22,7 +22,13 @@ const postData = [
         post_content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
         user_id: 3
 
-    }
+    },
+    {
+        title: "Three things I wish I included in my README.MD in my 20's",
+        post_content: 'minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupida.',
+        user_id: 3
+
+    },
 
 ];
 

@@ -1,13 +1,18 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
 const { Post, User, Comment  } = require('../models');
-// const loggedInOnly = require('../utils/auth');
+const loggedInOnly = require('../utils/auth');
 
-router.get("/", (req, res) => {
+
+router.get('/create-post',loggedInOnly,(req,res)=>{
+  res.render('create-post', {loggedIn: req.session.loggedIn})
+})
+
+router.get("/", loggedInOnly, (req, res) => {
   Post.findAll({
-    //  where: {
-    //     user_id: req.session.user_id
-    //   },
+     where: {
+        user_id: req.session.user_id
+      },
     attributes: ["id", "title", "post_content", "created_at"],
     include: [
       {
@@ -35,6 +40,7 @@ router.get("/", (req, res) => {
       res.status(500).json(err);
     });
 });
+
 
 
 // router.get('/',(req, res) => {
