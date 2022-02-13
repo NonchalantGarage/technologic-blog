@@ -83,7 +83,11 @@ NPM Dependencies
 
 [Deploy the app](https://guarded-lowlands-93805.herokuapp.com/)
 
+Start enjoying posts by thought leaders. 
 
+To contribute to comments or create posts, create an account by signing up. 
+
+Once you have signed up, create a new post, edit and existing post, or delete a post via your dashboard. 
 
 ## Screenshots 
 ![Alt text](/assets/screenshots/dashboard.png "Dashboard")
