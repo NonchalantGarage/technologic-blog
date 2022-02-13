@@ -1,17 +1,11 @@
 <section>
-
-    <h1>Hello World Dashboards</h1>
-  <div class="card text-center">
-
-    <div class="card-header">
-     <h2><a href="/post/{{id}}">{{title}}</a></h2>
-      <h4>Posted by
-      {{user.username}}
-      on
-      {{format_date created_at}} |   <a href="/post/{{id}}">{{comments.length}} comment</a></div>
-      </h4>
-      <br />
-      {{post_content}}
-
+    <h1 class = "text-center">Your Posts</h1>
+<ul>
+  {{#each posts as |post|}}
+  <p>
+    {{> post-info post }}
+  </p>
+  {{/each}}
+</ul>
   </div>
 </section>
